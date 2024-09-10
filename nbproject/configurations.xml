@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="62">
+  <logicalFolder name="root" displayName="root" projectFiles="true">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <logicalFolder name="f1" displayName="adt" projectFiles="true">
+        <itemPath>adt.h</itemPath>
+        <itemPath>shdadt.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f2" displayName="comm" projectFiles="true">
+        <itemPath>boxset.h</itemPath>
+        <itemPath>chnls.h</itemPath>
+        <itemPath>clisrv.h</itemPath>
+        <itemPath>mailbox.h</itemPath>
+        <itemPath>mailboxserver.h</itemPath>
+        <itemPath>memseg.h</itemPath>
+        <itemPath>myipc.h</itemPath>
+        <itemPath>shdmry.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f3" displayName="gameobj" projectFiles="true">
+        <itemPath>dummy.h</itemPath>
+        <itemPath>gamefield.h</itemPath>
+        <itemPath>gameobj.h</itemPath>
+        <itemPath>ghost.h</itemPath>
+        <itemPath>pacman.h</itemPath>
+        <itemPath>worm.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f4" displayName="graph" projectFiles="true">
+        <itemPath>graph.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f5" displayName="locks" projectFiles="true">
+        <itemPath>locks.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f7" displayName="managers" projectFiles="true">
+        <itemPath>collman.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f6" displayName="tasks" projectFiles="true">
+        <itemPath>task.h</itemPath>
+        <itemPath>tsktool.h</itemPath>
+      </logicalFolder>
+      <itemPath>common.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+      <itemPath>level0.txt</itemPath>
+      <itemPath>level2.txt</itemPath>
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <logicalFolder name="f1" displayName="adt" projectFiles="true">
+        <itemPath>adt.c</itemPath>
+        <itemPath>shdadt.c</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f2" displayName="comm" projectFiles="true">
+        <itemPath>chnls.c</itemPath>
+        <itemPath>clisrv.c</itemPath>
+        <itemPath>mailbox.c</itemPath>
+        <itemPath>mailboxserver.c</itemPath>
+        <itemPath>memseg.c</itemPath>
+        <itemPath>myipc.c</itemPath>
+        <itemPath>shdmry.c</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f3" displayName="gameobj" projectFiles="true">
+        <itemPath>dummy.c</itemPath>
+        <itemPath>gamefield.c</itemPath>
+        <itemPath>gameobj.c</itemPath>
+        <itemPath>ghost.c</itemPath>
+        <itemPath>pacman.c</itemPath>
+        <itemPath>worm.c</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f4" displayName="graph" projectFiles="true">
+        <itemPath>graph.c</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f5" displayName="locks" projectFiles="true">
+        <itemPath>locks.c</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f7" displayName="managers" projectFiles="true">
+        <itemPath>collman.c</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f6" displayName="tasks" projectFiles="true">
+        <itemPath>task.c</itemPath>
+        <itemPath>tsktool.c</itemPath>
+      </logicalFolder>
+      <itemPath>main.c</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <compilerSet>GNU|GNU</compilerSet>
+        <platform>2</platform>
+      </toolsSet>
+      <compileType>
+        <linkerTool>
+          <linkerLibItems>
+            <linkerLibStdlibItem>PosixThreads</linkerLibStdlibItem>
+            <linkerLibStdlibItem>Curses</linkerLibStdlibItem>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <compilerSet>GNU|GNU</compilerSet>
+        <platform>2</platform>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <linkerTool>
+          <linkerLibItems>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+    </conf>
+  </confs>
+</configurationDescriptor>
